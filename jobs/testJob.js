@@ -7,4 +7,7 @@ function testJob({ attrs: { name, data } }, done) {
   done();
 }
 
-module.exports = testJob;
+module.exports = {
+  jobName: "test-job",
+  jobFn: testJob,
+};
